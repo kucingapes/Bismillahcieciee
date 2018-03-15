@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kucingapes.utsman.bismillahcieciee.senses">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/ic_mata"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:allow_random_color="false"
+                app:btn_color="@color/biru"
+                app:btn_fill_color="@color/biru"
+                app:siShape="@raw/mata"
+                app:shine_animation_duration="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/biru"
+                android:text="Mata"
+                android:layout_below="@+id/ic_mata"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/ic_hidung"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:allow_random_color="false"
+                app:btn_color="@color/kuning"
+                app:btn_fill_color="@color/kuning"
+                app:siShape="@raw/hidung"
+                app:shine_animation_duration="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/kuning"
+                android:text="Hidung"
+                android:layout_below="@+id/ic_hidung"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <com.sackcentury.shinebuttonlib.ShineButton
+                android:id="@+id/ic_kuping"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                app:allow_random_color="false"
+                app:btn_color="@color/merah"
+                app:btn_fill_color="@color/merah"
+                app:siShape="@raw/kuping"
+                app:shine_animation_duration="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/merah"
+                android:text="Kuping"
+                android:layout_below="@+id/ic_kuping"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:orientation="horizontal"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <com.sackcentury.shinebuttonlib.ShineButton
+                    android:id="@+id/ic_lidah"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    app:allow_random_color="false"
+                    app:btn_color="@color/hijau"
+                    app:btn_fill_color="@color/hijau"
+                    app:siShape="@raw/lidah"
+                    app:shine_animation_duration="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/hijau"
+                    android:text="Hidung"
+                    android:layout_below="@+id/ic_lidah"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <com.sackcentury.shinebuttonlib.ShineButton
+                    android:id="@+id/ic_kulit"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_centerInParent="true"
+                    app:allow_random_color="false"
+                    app:btn_color="@color/coklat"
+                    app:btn_fill_color="@color/coklat"
+                    app:siShape="@raw/kulit"
+                    app:shine_animation_duration="1"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/coklat"
+                    android:text="Kulit"
+                    android:layout_below="@+id/ic_kulit"
+                    android:layout_centerHorizontal="true"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

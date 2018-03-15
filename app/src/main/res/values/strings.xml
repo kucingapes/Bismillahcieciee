@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Bismillah cie ciee</string>
+
+    <string name="senses">Kita dapat membedakan warna bunga karena dapat melihat
+        \n \nKita dapat menyenangi musik karena dapat mendengar.
+        \n \nKita dapat merasakan air panas dan es karena dapat meraba.
+        \n \nDengan kata lain, kita dapat mengenal lingkungan melalui penglihatan, pendengaran, pengecapan, penciuman, dan peraba. Alat yang digunakan untuk itu disebut alat indra.
+</string>
+
+    <string name="soal_1">Fungsi retina pada penglihatan adalah menhasilkan bayangan.</string>
+    <string name="soal_2">Bagian tepi lidah berfungsi untuk merasakan rasa manis dan pahit.</string>
+    <string name="soal_3">Alat indra kita yang dapat membedakan halus dan kasar suatu permukaan suatu benda adalah lidah.</string>
+    <string name="soal_4">Telinga dalam terdiri atas tingkap jorong, tingkap bundar, tiga saluran setengah lingkaran, dna rumah siput (koklea).</string>
+    <string name="soal_5">Hidung merupakan indra pencium yang juga berfungsi sebagai jalannya pernapasan.</string>
+</resources>
