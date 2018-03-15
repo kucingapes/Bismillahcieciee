@@ -13,7 +13,12 @@ import android.widget.Toast;
 
 import com.sackcentury.shinebuttonlib.ShineButton;
 
+import nl.dionsegijn.konfetti.KonfettiView;
+import nl.dionsegijn.konfetti.models.Shape;
+import nl.dionsegijn.konfetti.models.Size;
+
 public class Soal extends AppCompatActivity {
+
 
     /* set skor awal 0 */
     private int score = 0;
@@ -26,9 +31,10 @@ public class Soal extends AppCompatActivity {
             , btnBetul_04, btnSalah_04
             , btnBetul_05, btnSalah_05;
 
-    TextView textScore;
+    TextView textScore, textKuis;
     Button lanjutSoalBtn;
     RelativeLayout layoutLanjut, layoutScore;
+    KonfettiView viewKonfetti;
 
 
     @Override
@@ -47,6 +53,22 @@ public class Soal extends AppCompatActivity {
         mSoal_3();
         mSoal_4();
         mSoal_5();
+
+        konfetti();
+    }
+
+    private void konfetti() {
+        viewKonfetti = findViewById(R.id.viewKonfetti);
+        viewKonfetti.build()
+                .addColors(Color.YELLOW, Color.GREEN, Color.MAGENTA)
+                .setDirection(0.0, 359.0)
+                .setSpeed(1.5f, 5f)
+                .setFadeOutEnabled(true)
+                .setTimeToLive(5000L)
+                .addShapes(Shape.RECT, Shape.CIRCLE)
+                .addSizes(new Size(12, 5f))
+                .setPosition(-100f, viewKonfetti.getWidth() + 800f, -100f, -100f)
+                .stream(100, 5000L);
     }
 
     private void setupFullscreen() {
@@ -88,6 +110,7 @@ public class Soal extends AppCompatActivity {
         lanjutSoalBtn = findViewById(R.id.btnLanjutSoal);
 
         textScore = findViewById(R.id.textScore);
+        textKuis = findViewById(R.id.textKuis);
 
         layoutLanjut = findViewById(R.id.layoutLanjut);
         layoutScore = findViewById(R.id.score);
@@ -257,8 +280,6 @@ public class Soal extends AppCompatActivity {
         });
     }
 
-
-
     /* Method ketika untuk mengaktifkan button lanjut setelah menjawab soal */
     private void lanjutEnable() {
         lanjutSoalBtn.setEnabled(true);
@@ -273,7 +294,6 @@ public class Soal extends AppCompatActivity {
     /* Method jika jawaban salah */
     private void jwabSalah() {
         Toast.makeText(getApplicationContext(), "Tidak Tepat", Toast.LENGTH_SHORT).show();
-
     }
 
 
@@ -308,6 +328,8 @@ public class Soal extends AppCompatActivity {
             layoutLanjut.setVisibility(View.GONE);
             layoutScore.setVisibility(View.VISIBLE);
             lanjutSoalBtn.setEnabled(false);
+            textKuis.setVisibility(View.GONE);
+
 
         }
     }
